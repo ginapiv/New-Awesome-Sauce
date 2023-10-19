@@ -1,0 +1,50 @@
+body {
+    animation-name: colorloop;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes colorloop {
+     0% {
+        background-color: black;
+        transform: rotate(38deg) scale(3, 0.8) skew(61deg, 51deg);
+    }
+    25% {
+        background-color: white;
+        transform: rotate(224deg) scale(0.3, 0.8) skew(61deg, 51deg);
+    }
+    50% { 
+        background-color: black;
+        transform: rotate(38deg) scale(3, 0.8) skew(61deg, 51deg);
+    }
+    75% {
+        background-color: white;
+        transform: rotate(224deg) scale(0.3, 0.8) skew(61deg, 51deg);
+    }
+    100% {
+        background-color: black;
+        transform: rotate(38deg) scale(3, 0.8) skew(61deg, 51deg);
+    }
+}
+
+p {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+}
+
+p {
+    background: conic-gradient(
+      from 63deg at 28% 50%,
+      rgba(126, 154, 247, 1) 12deg,
+      rgba(225, 255, 219, 1) 84deg,
+      rgba(32, 178, 7, 1) 96deg
+    );
+    background-blend-mode: normal;
+    transform: rotate(213deg) translate(82px, 34px) scale(1.5, 0.8) skew(61deg, 51deg);
+    box-shadow: 186px -140px 21px 0px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
